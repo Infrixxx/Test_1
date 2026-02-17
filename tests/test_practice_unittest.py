@@ -56,6 +56,9 @@ class TestIsPalindrome(unittest.TestCase):
 #Question 4
 
 class TestRepeatScript(unittest.TestCase):
+    def test_simple_input(self):
+        self.assertEqual(Solve.repeat_script("pops",4),"popspopspopspops")
     def test_no_input(self):
-        self.assertEqual(Solve.repeat_script("pops",7))
-    
+        self.assertRaises(TypeError,Solve.repeat_script)
+    def test_incorrect_input_type(self):
+        self.assertRaises(TypeError,Solve.repeat_script("Pop","K"))
