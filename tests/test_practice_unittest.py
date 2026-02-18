@@ -65,5 +65,7 @@ class TestRepeatScript(unittest.TestCase):
     def test_negative_number(self):
         self.assertRaises(ValueError,Solve.repeat_script,"Pop",-7)
     def test_missing_input(self):
-        self.assertRaises(ValueError,Solve.repeat_script,"Wrong")
-    
+        self.assertRaises(TypeError,Solve.repeat_script,"Wrong")
+
+#_____________________________________________________________________________________________________________________
+#Question 5
