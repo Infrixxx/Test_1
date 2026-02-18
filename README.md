@@ -24,25 +24,31 @@ You can verify your solutions in `solve.py` using either the standard library or
 Create logic that calculates the sum of all even integers from 1 up to a specified limit. 
 * **Edge Cases:** Returns `0` if the limit is zero or negative.
 
+
 ### 2. Temperature Converter (Functions)
 Transform a Fahrenheit temperature into Celsius.
 * **Requirement:** Output must be a float rounded to exactly **two decimal places**.
+
 
 ### 3. Palindrome Detector (Algorithms)
 Check if a string reads the same forward and backward.
 * **Requirement:** Ignore letter casing and disregard all spaces.
 
+
 ### 4. Repeater Script (CLI)
 A terminal-based script that accepts text and a number $n$.
 * **Requirement:** Output the text repeated $n$ times as a single continuous string.
+
 
 ### 5. Cheapest Item Finder (Data Structures)
 Search through a dictionary of products and prices.
 * **Requirement:** Return the name of the cheapest product. Handle empty collections.
 
+
 ### 6. Email Sanitizer (Data Manipulation)
 Accept a list of raw email strings.
 * **Requirement:** Remove whitespace, convert to lowercase, and remove duplicates.
+
 
 ### 7. Receipt Aligner (String Formatting)
 Produce a receipt line exactly **25 characters wide**.
