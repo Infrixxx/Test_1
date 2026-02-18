@@ -1,3 +1,5 @@
+import sys
+
 # Loops
 # ==========
 # TODO : Question 1
@@ -20,7 +22,7 @@ def is_palindrome(str):
 # ==========
 # TODO : Question 4
 # ==========
-def repeat_script(arg_):
+def repeat_script(string=None,n=None):
     pass
 # Data Structures
 # ==========
