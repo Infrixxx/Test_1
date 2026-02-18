@@ -69,3 +69,57 @@ class TestRepeatScript(unittest.TestCase):
 
 #_____________________________________________________________________________________________________________________
 #Question 5
+
+class TestFindTheCheapest(unittest.TestCase):
+    def test_correct_item(self):
+        # Clearly defined prices, added in a specific order
+        inventory_1 = {
+            "Laptop": 1200.00,
+            "Mouse": 25.50,
+            "Keyboard": 45.00,
+            "Monitor": 300.00
+        }
+        # Expected Result: "Mouse"
+        self.assertEqual(Solve.find_the_cheapest(inventory_1),"Mouse")
+
+    def test_unordered_list(self):
+        # Cheapest item is buried in the middle with many decimals
+        inventory_2 = {
+            "Desk": 150.00,
+            "Lamp": 15.99,
+            "Pencil": 0.55,
+            "Chair": 85.00,
+            "Notebook": 2.49
+        }
+        # Expected Result: "Pencil"
+        self.assertEqual(Solve.find_the_cheapest(inventory_2),"Pencil")
+
+    def test_same_price(self):
+        # Two items share the same lowest price
+        inventory_3 = {
+            "Apple": 0.99,
+            "Banana": 1.50,
+            "Pear": 0.99,
+            "Orange": 2.00
+        }
+        # Expected Result: "Apple" (if returning the first one found)
+        self.assertEqual(Solve.find_the_cheapest(inventory_3),"Apple")
+    
+    def test_discount_item(self):
+        # Testing zeros and negatives
+        inventory_4 = {
+            "Service_Fee": 10.00,
+            "Promotion": -5.00,
+            "Water": 0.00,
+            "Bread": 2.50
+        }
+        # Expected Result: "Promotion"
+        self.assertEqual(Solve.find_the_cheapest(inventory_4),"Promotion")
+
+    def test_empty(self):
+        inventory_5={}
+        self.assertEqual(Solve.find_the_cheapest(inventory_5),None)
+
+    def test_invalid_input(self):
+        inventory_6=[3,"^","poop","lopo",7,9]
+        self.assertRaises(TypeError,Solve.find_the_cheapest,inventory_6)
