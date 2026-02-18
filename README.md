@@ -11,7 +11,7 @@ Ensure you have Python 3 installed. You will also need `pytest` for running the 
 `pip install pytest`
 
 ### Running the Tests
-You can verify your solutions in `solve.py` using either the standard library or pytest:
+You can verify your solutions in [`solve.py`](Solve.py) using either the standard library or pytest:
 
 * **Unittest:** `python3 -m unittest tests/test_practice_unittest.py`
 * **Pytest:** `python3 -m pytest tests/test_practice_pytest.py`
@@ -57,4 +57,4 @@ Produce a receipt line exactly **25 characters wide**.
 ---
 
 ## 📚 Theory Questions
-Answer the questions found in  inside the [Theory questions](Theory_questions.txt) file. [`Answers file`](Answers.txt) Focus on explaining the "why" behind the logic.
+Answer the questions found in  inside the [`Theory questions`](Theory_questions.txt) file. [`Answers file`](Answers.txt) Focus on explaining the "why" behind the logic.
